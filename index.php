@@ -4,7 +4,7 @@
         <title> </title>
     </head>
     <body>
-        <h1> Lyndsey Craig's </h1>
+        <h1> Lyndsey Craig's CST352 Website</h1>
 
     </body>
 </html>
