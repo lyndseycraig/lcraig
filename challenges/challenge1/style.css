@@ -1,0 +1,42 @@
+@font-face {
+    font-family: birds;
+    src: url(birds.ttf);
+}
+
+body{
+    color:white;
+    background:black;
+    font-family:birds;
+}
+
+div{
+    display:inline-block;
+    width:40%;
+    height:auto;
+    
+    text-align:center;
+}
+
+h1{
+    color:yellow;
+}
+
+#fall{
+    border-radius:0px 0px 50px 0px;
+}
+
+#summmer{
+    border-radius:50px 0px 0px 0px;
+}
+
+#winter{
+    border-radius:0px 50px 0px 0px;
+    height:630px;
+}
+
+#fall{
+    border-radius:0px 0px 0px 50px;
+}
+
+
+
