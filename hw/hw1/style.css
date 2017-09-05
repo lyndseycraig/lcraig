@@ -1,0 +1,69 @@
+body{
+    background: gray;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin:auto;
+    
+}
+
+
+nav{
+    text-align:center;
+    
+}
+
+h1{
+    font-size:50px;
+    text-align:center;
+}
+
+nav a{
+    text-align:center;
+    padding: 15px;
+    padding-bottom:4px;
+    font-size:1.8em;
+    text-decoration:none;
+    color:white;
+    display:inline-block;
+}
+
+nav a:hover{
+    font-size: 2em;
+    transition: .9s;
+    text-shadow:2px 5px black;
+}
+
+img{
+    
+    padding-left: 20%;
+    padding right:15px;
+    float:left;
+    
+}
+
+p{
+    width:80%;
+    height:auto;
+    font-size:26px;
+}
+
+#content{
+    position:relative;
+    left:20px;
+}
+
+#current{
+    text-decoration: underline; 
+    text-decoration-style: wavy; 
+}
+main{
+    padding:0px 70px 200px 70px;
+}
+
+footer{
+    padding-left: 40px;
+}
+
+.subpad{
+    padding:0px 15% 200px 19%;
+}
+
