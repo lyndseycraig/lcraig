@@ -1,0 +1,97 @@
+[05-Sep-2017 18:23:14 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 26 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:23:14 UTC] PHP Stack trace:
+[05-Sep-2017 18:23:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:23:14 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:26
+[05-Sep-2017 18:25:11 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 26 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:11 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:11 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:26
+[05-Sep-2017 18:25:11 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 27 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:11 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:11 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:27
+[05-Sep-2017 18:25:11 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 28 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:11 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:11 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:28
+[05-Sep-2017 18:25:40 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 26 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:40 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:40 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:26
+[05-Sep-2017 18:25:40 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 27 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:40 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:40 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:27
+[05-Sep-2017 18:25:40 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 28 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:40 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:40 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:28
+[05-Sep-2017 18:25:46 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 26 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:46 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:46 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:26
+[05-Sep-2017 18:25:46 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 27 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:46 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:46 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:27
+[05-Sep-2017 18:25:46 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 28 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:25:46 UTC] PHP Stack trace:
+[05-Sep-2017 18:25:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:25:46 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:28
+[05-Sep-2017 18:26:31 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 26 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:26:31 UTC] PHP Stack trace:
+[05-Sep-2017 18:26:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:26:31 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:26
+[05-Sep-2017 18:26:31 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 27 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:26:31 UTC] PHP Stack trace:
+[05-Sep-2017 18:26:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:26:31 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:27
+[05-Sep-2017 18:26:31 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 28 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:26:31 UTC] PHP Stack trace:
+[05-Sep-2017 18:26:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:26:31 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:28
+[05-Sep-2017 18:28:04 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 26 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:04 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:04 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:26
+[05-Sep-2017 18:28:04 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 27 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:04 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:04 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:27
+[05-Sep-2017 18:28:04 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 28 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:04 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:04 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:28
+[05-Sep-2017 18:28:10 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 26 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:10 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:10 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:26
+[05-Sep-2017 18:28:10 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 27 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:10 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:10 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:27
+[05-Sep-2017 18:28:10 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 28 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:10 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:10 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:28
+[05-Sep-2017 18:28:12 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 26 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:12 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:12 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:26
+[05-Sep-2017 18:28:12 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 27 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:12 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:12 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:27
+[05-Sep-2017 18:28:12 UTC] PHP Warning:  Missing argument 1 for displaySymbol(), called in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 28 and defined in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:28:12 UTC] PHP Stack trace:
+[05-Sep-2017 18:28:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[05-Sep-2017 18:28:12 UTC] PHP   2. displaySymbol() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:28
+[05-Sep-2017 18:37:12 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:39:14 UTC] PHP Parse error:  syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 10
+[05-Sep-2017 18:46:21 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 36
+[07-Sep-2017 18:45:24 UTC] PHP Fatal error:  Call to undefined function displauySymbol() in /home/ubuntu/workspace/lcraig/labs/lab2/index.php on line 67
+[07-Sep-2017 18:45:24 UTC] PHP Stack trace:
+[07-Sep-2017 18:45:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
+[10-Sep-2017 00:15:53 UTC] PHP Parse error:  syntax error, unexpected 'sounds' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/lcraig/labs/lab2/inc/functions.php on line 32
+[10-Sep-2017 00:15:53 UTC] PHP Stack trace:
+[10-Sep-2017 00:15:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab2/index.php:0
