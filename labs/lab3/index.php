@@ -88,20 +88,9 @@ function identifyWinner(){
     <head>
         <title>Lab 3: Ace of Poker</title>
         <style>
-            .ace{
-                border:yellow 2px solid;
-            }
-            
-            body{
-                text-align:center;
-                
-            }
-            span{
-                font-size:25px;
-                position:relative;
-                top:-40px;
-            }
+            @import url("css/styles.css");
         </style>
+        
     </head>
     <body>
         <h1>Ace Poker</h1>
