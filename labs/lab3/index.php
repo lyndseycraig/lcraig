@@ -5,7 +5,7 @@ for($i=1; $i<52; $i++){
     $deck[]=$i;
 }
 */
-$deck=range(1,41);
+$deck=range(1,52);
 shuffle($deck);
 //print_r($deck);
 $totalPoints=0;
