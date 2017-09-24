@@ -1,0 +1,57 @@
+body{
+    background-color:#66CDAA;
+    
+    font-family: 'Hind', sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: 'Sarpanch', sans-serif;
+    font-size:70px;
+    text-shadow: 0 0 3px #0000FF, 0 0 5px #000000;
+    color:#00FF00;
+}
+
+.character{
+    padding:60px;
+    position:absolute;
+    left:300px;
+ 
+}
+
+.action{
+    padding:50px 50px 50px 50px;
+    position:relative;
+    left:500px;
+    
+}
+
+.finalChar{
+    position:relative;
+    left:200px;
+    font-size:50px;
+}
+
+.finalAct{
+    position:relative;
+    left:200px;
+     font-size:40px;
+}
+#main{
+    
+    background:#66CDAA;
+}
+
+#luck{
+    position:absolute;
+    left:200px;
+    font-size:30px;
+}
+
+#points{
+    position:absolute;
+    left:200px;
+    font-size:35px;
+    color:white;
+}
