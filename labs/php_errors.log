@@ -119,3 +119,10 @@
 [28-Sep-2017 18:07:17 UTC] PHP Fatal error:  Call to undefined function getImageURLs() in /home/ubuntu/workspace/lcraig/labs/lab4/index.php on line 7
 [28-Sep-2017 18:07:17 UTC] PHP Stack trace:
 [28-Sep-2017 18:07:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab4/index.php:0
+[01-Oct-2017 23:19:23 UTC] PHP Warning:  Missing argument 2 for getImageURLs(), called in /home/ubuntu/workspace/lcraig/labs/lab4/index.php on line 8 and defined in /home/ubuntu/workspace/lcraig/labs/lab4/api/pixabayAPI.php on line 4
+[01-Oct-2017 23:19:23 UTC] PHP Stack trace:
+[01-Oct-2017 23:19:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab4/index.php:0
+[01-Oct-2017 23:19:23 UTC] PHP   2. getImageURLs() /home/ubuntu/workspace/lcraig/labs/lab4/index.php:8
+[01-Oct-2017 23:21:01 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/lcraig/labs/lab4/index.php on line 57
+[01-Oct-2017 23:21:01 UTC] PHP Stack trace:
+[01-Oct-2017 23:21:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab4/index.php:0

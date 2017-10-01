@@ -59,7 +59,7 @@
                     while(!isset($imageURLs[$randomIndex]));
                     
                     echo '<div class="item ';
-                    echo ($i==0) ?"active" : "";
+                    echo ($i==0)?"active": "";
                     echo '">';
                     echo '<img src="' . $imageURLs[$randomIndex] . '">';
                     echo '</div>';
@@ -86,18 +86,18 @@
 <br>
 <form>
             <input type="text" name="keyword" placeholder="keyword" value="<?=$_GET['keyword']?>"/>
-            <input type="radio" id="lhorizontal" name="layout" value="horizontal">
+            <input type="radio" id="lhorizontal" name="orientation" value="horizontal">
             <label for= "Horizontal"></label><label for="lhorizontal">Horizontal</label>
-            <input type="radio" id="lvertical" name="layout" value="vertical">
+            <input type="radio" id="lvertical" name="orientation" value="vertical">
             <label for= "Vertical"></label><label for="lvertical">Vertical</label>
             
-            <select name ="category">
-                <option value="">Select One</option>
-                <option value="ocean">Ocean</option>
-                <option vaue="forest">Forest</option>
-                <option value="mountain">Mountain</option>
-                <option value="snow">Snow</option>
-                <option value="island">Island</option>
+            <select name="keyword">
+                <option value="">-Select One-</option>
+                <option value="fashion">Fashion</option>
+                <option vaue="people">People</option>
+                <option value="food">Food</option>
+                <option value="travel">Travel</option>
+                <option value="sports">Sports</option>
             </select>
             <input type="submit"  value="Search"/>
         </form>
