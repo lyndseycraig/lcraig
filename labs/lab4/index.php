@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <?php
+    include 'api/pixabayAPI.php';
     $backgroundImage = "img/sea.jpg";
     
     //API call goes here
     if (isset($_GET['keyword'])){
-        include 'api/pixabayAPI.php';
-        $imageURLs=getImageURLs($_GET['keyword']);
+        $keyword= $_GET['keyword'];
+        
+        if (!empty($_GET['category'])){//something chosen in category
+            $keyword=$_GET['category']; //uses category instead of keyword
+        }
+        
+        if(isset($_GET['layout'])){
+            $imageURLs=getImageURLs($keyword, $_GET['layout']);
+        }
+        
+        else{
+             $imageURLs=getImageURLs($keyword);
+        }
+        
+        
+        
         $backgroundImage=$imageURLs[array_rand($imageURLs)];
     }
 ?>
@@ -22,18 +37,39 @@
         </style>
     </head>
     <body>
-        
+        <form>
+            <input type="text" name="keyword" placeholder="keyword" value="<?=$_GET['keyword']?>"/>
+            <input type="radio" id="lhorizontal" name="layout" value="horizontal">
+            <label for= "Horizontal"></label><label for="lhorizontal">Horizontal</label>
+            <input type="radio" id="lvertical" name="layout" value="vertical">
+            <label for= "Vertical"></label><label for="lvertical">Vertical</label>
+            
+            <select name="category">
+                <option value="">-Select One-</option>
+                <option value="fashion">Fashion</option>
+                <option vaue="people">People</option>
+                <option value="food">Food</option>
+                <option value="travel">Travel</option>
+                <option value="sports">Sports</option>
+            </select>
+            <input type="submit"  value="Search"/>
+            
+        </form>
          
         
         <?php
-            if (!isset($imageURLs)) {
+            if (!isset($_GET['keyword'])) {
                 echo "<h2>Type a keyword to display a slideshow with random images from Pixbay.com</h2>";
             
             }
             
             else{
+                
+                if (empty($_GET['keyword']) && empty($_GET['category'])){
+                    echo "<h2>You must enter a keyword or choose a category!</h2>";
+                }
                 //Display Carousel Here
-               
+             shuffle($imageURLs);  
         ?>
         
         
@@ -84,23 +120,8 @@
 }
 ?>
 <br>
-<form>
-            <input type="text" name="keyword" placeholder="keyword" value="<?=$_GET['keyword']?>"/>
-            <input type="radio" id="lhorizontal" name="orientation" value="horizontal">
-            <label for= "Horizontal"></label><label for="lhorizontal">Horizontal</label>
-            <input type="radio" id="lvertical" name="orientation" value="vertical">
-            <label for= "Vertical"></label><label for="lvertical">Vertical</label>
-            
-            <select name="keyword">
-                <option value="">-Select One-</option>
-                <option value="fashion">Fashion</option>
-                <option vaue="people">People</option>
-                <option value="food">Food</option>
-                <option value="travel">Travel</option>
-                <option value="sports">Sports</option>
-            </select>
-            <input type="submit"  value="Search"/>
-        </form>
+
+       
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
          

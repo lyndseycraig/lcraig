@@ -14,3 +14,15 @@
          margin: 0 auto;   
          width: 700px;
     }
+    
+    input[type=text] {
+    border: 2px solid yellow;
+    border-radius: 4px;
+}
+
+h2{
+    
+    text-shadow: 2px 2px 5px white;
+    color:black;
+    padding: 10px;
+}

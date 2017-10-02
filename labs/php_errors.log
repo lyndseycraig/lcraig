@@ -126,3 +126,10 @@
 [01-Oct-2017 23:21:01 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/lcraig/labs/lab4/index.php on line 57
 [01-Oct-2017 23:21:01 UTC] PHP Stack trace:
 [01-Oct-2017 23:21:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab4/index.php:0
+[02-Oct-2017 00:30:13 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/lcraig/labs/lab4/index.php on line 63
+[02-Oct-2017 00:30:13 UTC] PHP Stack trace:
+[02-Oct-2017 00:30:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab4/index.php:0
+[02-Oct-2017 01:00:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/lcraig/labs/lab4/index.php on line 90
+[02-Oct-2017 01:02:32 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/lcraig/labs/lab4/index.php on line 76
+[02-Oct-2017 01:02:32 UTC] PHP Stack trace:
+[02-Oct-2017 01:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab4/index.php:0
