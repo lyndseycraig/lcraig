@@ -1,0 +1,52 @@
+body{
+    color:black;
+    background:rgba(144, 147, 157, 1);
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.questions{
+    font-size:17px;
+    
+    
+}
+
+form{
+    
+    padding:30px 20px 30px 30px;
+}
+
+h1{
+    text-align:center;
+    color:black;
+    text-shadow: 0 0 15px white;
+    font-size:40px;
+}
+
+#quiz{
+    border-radius:25px;
+    border: 5px solid black;
+    width:800px;
+    background:rgba(228, 230, 236, 1);
+}
+
+#spacing{
+    padding-top:100px;
+}
+
+input[type="text"] {
+    width: 90px;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    border-radius: 5px;
+    background:rgba(144, 147, 157, 1);
+}
+.correct{
+    color:green;
+    
+}
+.incorrect{
+    color:red;
+}
+
+
