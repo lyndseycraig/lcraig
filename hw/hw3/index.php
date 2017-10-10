@@ -34,7 +34,7 @@
             
                 
                 if($_POST["answer1"]=="military"){
-                    echo "Correct!</br>";
+                    echo "<span class='correct'>Correct!</span></br>";
                 }
             
                 else{
@@ -63,7 +63,7 @@
             
                 
                 if($_POST["answer2"]=="1994"){
-                    echo "Correct!</br>";
+                    echo "<span class='correct'>Correct!</span></br>";
                 }
             
                 else{
@@ -158,7 +158,7 @@
             
                 
                 if($_POST['answer4']=="Vietnam War"){
-                    echo "Correct!</br>";
+                   echo "<span class='correct'>Correct!</span></br>";
                 }
             
                 else{
