@@ -9,6 +9,7 @@ $stmt -> execute();
 $record = $stmt -> fetch(); //retrieves one record
 
 echo $record['firstName'] . " " . $record['biography'];
+echo "<img src='pics/" . $record['firstName'] . ".jpg'>";
 ?>
 <!DOCTYPE html>
 <html>

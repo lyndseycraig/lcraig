@@ -44,11 +44,14 @@ function getRandomQuote(){
 <!DOCTYPE html>
 <html>
     <head>
-        <title> </title>
+        <title>Random Quotes</title>
+        <style>
+        @import url('css/styles.css');
+        </style>
     </head>
     <body>
         
-        <h1>All Quotes</h1>
+        <h1>Random Quotes</h1>
         
         <?=getRandomQuote()?>
         
