@@ -13,7 +13,7 @@ echo $record['firstName'] . " " . $record['biography'] . "</br></br>";
 echo "Date of birth: " . $record['dob'] . "</br>";
 echo "Date of death: " . $record['dod'] . "</br>";
 echo "Profession: " . $record['profession'] . "</br>";
-echo "Country: " . $record['country'] . "</br>";
+echo "Country: " . $record['country'] . "</br></br>";
 echo "<div class='pics'><img src='" . $record['picture'] . "'></div>";
 ?>
 <!DOCTYPE html>
