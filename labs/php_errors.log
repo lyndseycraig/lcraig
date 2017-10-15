@@ -133,3 +133,97 @@
 [02-Oct-2017 01:02:32 UTC] PHP Fatal error:  Maximum execution time of 300 seconds exceeded in /home/ubuntu/workspace/lcraig/labs/lab4/index.php on line 76
 [02-Oct-2017 01:02:32 UTC] PHP Stack trace:
 [02-Oct-2017 01:02:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab4/index.php:0
+[12-Oct-2017 18:32:31 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 20
+[12-Oct-2017 18:32:31 UTC] PHP Stack trace:
+[12-Oct-2017 18:32:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[12-Oct-2017 18:32:31 UTC] PHP   2. getRandomQuotes() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:53
+[12-Oct-2017 18:34:16 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 20
+[12-Oct-2017 18:34:16 UTC] PHP Stack trace:
+[12-Oct-2017 18:34:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[12-Oct-2017 18:34:16 UTC] PHP   2. getRandomQuotes() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:53
+[12-Oct-2017 18:34:28 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 20
+[12-Oct-2017 18:34:28 UTC] PHP Stack trace:
+[12-Oct-2017 18:34:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[12-Oct-2017 18:34:28 UTC] PHP   2. getRandomQuotes() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:53
+[12-Oct-2017 18:37:43 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 20
+[12-Oct-2017 18:37:43 UTC] PHP Stack trace:
+[12-Oct-2017 18:37:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[12-Oct-2017 18:37:43 UTC] PHP   2. getRandomQuotes() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:53
+[12-Oct-2017 18:38:24 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 20
+[12-Oct-2017 18:38:24 UTC] PHP Stack trace:
+[12-Oct-2017 18:38:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[12-Oct-2017 18:38:24 UTC] PHP   2. getRandomQuotes() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:53
+[12-Oct-2017 18:40:40 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 20
+[12-Oct-2017 18:40:40 UTC] PHP Stack trace:
+[12-Oct-2017 18:40:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[12-Oct-2017 18:40:40 UTC] PHP   2. getRandomQuotes() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:53
+[12-Oct-2017 18:41:32 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 20
+[12-Oct-2017 18:41:32 UTC] PHP Stack trace:
+[12-Oct-2017 18:41:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[12-Oct-2017 18:41:32 UTC] PHP   2. getRandomQuotes() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:53
+[12-Oct-2017 18:41:34 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 20
+[12-Oct-2017 18:41:34 UTC] PHP Stack trace:
+[12-Oct-2017 18:41:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[12-Oct-2017 18:41:34 UTC] PHP   2. getRandomQuotes() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:53
+[15-Oct-2017 20:14:36 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 7
+[15-Oct-2017 20:14:36 UTC] PHP Stack trace:
+[15-Oct-2017 20:14:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:0
+[15-Oct-2017 20:16:43 UTC] PHP Warning:  include(../../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 3
+[15-Oct-2017 20:16:43 UTC] PHP Stack trace:
+[15-Oct-2017 20:16:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[15-Oct-2017 20:16:43 UTC] PHP Warning:  include(): Failed opening '../../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 3
+[15-Oct-2017 20:16:43 UTC] PHP Stack trace:
+[15-Oct-2017 20:16:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[15-Oct-2017 20:16:43 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 4
+[15-Oct-2017 20:16:43 UTC] PHP Stack trace:
+[15-Oct-2017 20:16:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[15-Oct-2017 20:16:50 UTC] PHP Warning:  include(../../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 3
+[15-Oct-2017 20:16:50 UTC] PHP Stack trace:
+[15-Oct-2017 20:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[15-Oct-2017 20:16:50 UTC] PHP Warning:  include(): Failed opening '../../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 3
+[15-Oct-2017 20:16:50 UTC] PHP Stack trace:
+[15-Oct-2017 20:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[15-Oct-2017 20:16:50 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/lcraig/labs/lab5/index.php on line 4
+[15-Oct-2017 20:16:50 UTC] PHP Stack trace:
+[15-Oct-2017 20:16:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/index.php:0
+[15-Oct-2017 20:17:19 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 7
+[15-Oct-2017 20:17:19 UTC] PHP Stack trace:
+[15-Oct-2017 20:17:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:0
+[15-Oct-2017 20:27:39 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 7
+[15-Oct-2017 20:27:39 UTC] PHP Stack trace:
+[15-Oct-2017 20:27:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:0
+[15-Oct-2017 20:29:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''q_author WHERE authorId=Array[' at line 1' in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 8
+[15-Oct-2017 20:31:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''q_author' WHERE authorId=Array[' at line 1' in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 8
+[15-Oct-2017 20:33:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[' at line 1' in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 8
+[15-Oct-2017 20:33:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[' at line 1' in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 8
+[15-Oct-2017 20:35:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[' at line 1' in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 8
+[15-Oct-2017 20:37:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[' at line 1' in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 8
+[15-Oct-2017 20:38:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[' at line 1' in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/labs/lab5/getAuthorInfo.php on line 8
