@@ -1,4 +1,23 @@
 body{
     background-color:#1E90FF;
     color:white;
+    text-align:center;
+}
+
+
+div{
+    width:300px;
+    height:auto;
+}
+
+iframe{
+    position:relative;
+    text-align:left;
+    border:none;
+}
+img{
+    width:400px;
+    height:auto;
+    position:relative;
+    left:50px;
 }

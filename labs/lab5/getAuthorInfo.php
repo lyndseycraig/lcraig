@@ -8,16 +8,22 @@ $stmt = $conn -> prepare ($sql);
 $stmt -> execute();
 $record = $stmt -> fetch(); //retrieves one record
 
-echo $record['firstName'] . " " . $record['biography'];
-echo "<img src='pics/" . $record['firstName'] . ".jpg'>";
+echo "<h1>Author Info</h1>";
+echo $record['firstName'] . " " . $record['biography'] . "</br></br>";
+echo "Date of birth: " . $record['dob'] . "</br>";
+echo "Date of death: " . $record['dod'] . "</br>";
+echo "Profession: " . $record['profession'] . "</br>";
+echo "Country: " . $record['country'] . "</br>";
+echo "<div class='pics'><img src='" . $record['picture'] . "'></div>";
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title> Author Info </title>
+        <style>@import url('css/styles.css');</style>
     </head>
     <body>
-        <h1>Author Info</h1>
+        
 
     </body>
 </html>

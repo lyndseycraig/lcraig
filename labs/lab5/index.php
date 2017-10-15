@@ -37,7 +37,7 @@ function getRandomQuote(){
     $record = $stmt-> fetch(); //using fetch because expected to get only ONE record
     
     echo "<em>" . $record['quote']."</em></br>";
-    echo "<a target='authorInfo' href='getAuthorInfo.php?authorId=".$record['authorId']."'>-" . $record['firstName'] ." ". $record['lastName'] . "</a>";
+    echo "<a target='authorInfo' href='getAuthorInfo.php?authorId=".$record['authorId']."'>-" . $record['firstName'] ." ". $record['lastName'] . "</a></br>";
 }
 ?>
 
@@ -57,7 +57,7 @@ function getRandomQuote(){
         
         <br/>
         
-        <iframe name="authorInfo" width="500" height="300"></iframe>
+        <iframe name="authorInfo" width="500" height="800"></iframe>
 
     </body>
 </html>
