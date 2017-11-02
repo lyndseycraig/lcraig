@@ -9,3 +9,6 @@
 [10-Oct-2017 18:24:05 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/lcraig/practice/joins.php on line 23
 [10-Oct-2017 18:24:28 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/lcraig/practice/joins.php on line 27
 [10-Oct-2017 18:25:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/lcraig/practice/joins.php on line 27
+[18-Oct-2017 03:19:50 UTC] PHP Fatal error:  Call to undefined function array_print() in /home/ubuntu/workspace/lcraig/practice/practice_program1.php on line 3
+[18-Oct-2017 03:19:50 UTC] PHP Stack trace:
+[18-Oct-2017 03:19:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/practice/practice_program1.php:0

@@ -1,0 +1,31 @@
+body{
+    background:#ffdfe5;
+     font-family:serif;
+}
+
+.whole{
+    padding:10px 100px 10px 100px;
+    font-size:30px;
+    
+    
+    
+}
+
+.quotes{
+    font-size: 30px;
+    background:#ffffcc;
+    border-radius: 25px;
+    padding:10px;
+    border: white 5px solid;
+    float:right;
+   
+   
+}
+
+form{
+    float:left;
+    
+}
+h1, strong{
+    font-family: 'Fugaz One', cursive;
+}
