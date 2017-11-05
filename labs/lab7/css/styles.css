@@ -30,3 +30,11 @@ h1{
 #wrong{
     color:red;
 }
+
+.back{
+    text-align:right;
+}
+
+#add{
+    text-align:left;
+}

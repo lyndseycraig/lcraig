@@ -41,14 +41,15 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
     <body>
-
+         <div class="row">
+        <div class="col-md-4"></div><div class="col-md-4">
         <h1> Add New Author </h1>
         
         <fieldset>
             
             <legend> Adding New Author </legend>
             
-            <form>
+            <form id="add">
                 
                 First Name: <input type="text" name="firstName"/> <br />
                 Last Name: <input type="text" name="lastName"/> <br />
@@ -68,8 +69,13 @@
                 Picture URL: <input type="text" name="picture"/>   <br>
                 Biography: <br /> <textarea name="biography" cols="55" rows="5"></textarea><br>
                 <input type="submit" value="Add Author" name="addForm">
+                <a class="back" href="admin.php">Go Back</a>
             </form>
             
+            
         </fieldset>
+        </div>
+        <div class="col-md-4"></div>
+        </div>
     </body>
 </html>

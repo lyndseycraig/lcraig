@@ -110,7 +110,9 @@ if (isset($_GET['authorId'])) {
                 Picture URL: <input type="text" name="picture"  value="<?=$authorInfo['picture']?>" />   <br>
                 Biography: <br /> <textarea name="biography" cols="55" rows="5"><?=$authorInfo['biography']?></textarea><br>
                 <input type="submit" value="Update Author" name="updateForm">
+                <a class="back" href="admin.php">Go Back</a>
             </form>
+            
         </div>
         <div class="col-md-4"></div>
         </div>
