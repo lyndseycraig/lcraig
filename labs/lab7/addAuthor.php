@@ -1,59 +1,75 @@
 <?php
-    if(isset($_GET['addForm'])){
-        //echo "Form was sumbitted";
-        
-    include '../../dbConnection.php';
-    $conn= getDatabaseConnection();
-        
-         $sql = "INSERT INTO q_author
+
+ 
+ if (isset($_GET['addForm'])) { //checks if form was submitted
+     
+     include '../../dbConnection.php';
+     $conn = getDatabaseConnection();
+     
+     //echo "Form was submitted!";
+     $sql = "INSERT INTO q_author
             (firstName, lastName, gender, dob, dod, profession, country, picture, biography)
             VALUES 
-            (:fName, :lName, :gender, :dob, :dod, :profession, :country, :picture, :biography)"; 
-        
-        $np=array();
-        $np[":fName"] = $_GET['firstName'];
-        $np[":lName"] = $_GET['lastName'];
-        $np[":gender"] = $_GET['gender'];
-        $np[":dob"] = $_GET['dob'];
-        $np[":dod"] = $_GET['dod'];
-        $np[":profession"] = $_GET['profession'];
-        $np[":country"] = $_GET['country'];
-        $np[":picture"] = $_GET['picture'];
-        $np[":biography"] = $_GET['biography'];
-        
-        $stmt=$conn->prepare($sql);
-        $stmt->execute($np);
-        echo "Author added!";
-    }
+            (:fName, :lName, :gender, :dob, :dod, :profession, :country, :picture, :biography)";
+     $np = array();
+     $np[":fName"]  = $_GET['firstName'];
+     $np[":lName"]  = $_GET['lastName'];
+     $np[":gender"]  = $_GET['gender'];
+     $np[":dob"]  = $_GET['dob'];
+     $np[":dod"]  = $_GET['dod'];
+     $np[":profession"]  = $_GET['profession'];
+     $np[":country"]  = $_GET['country'];
+     $np[":picture"]  = $_GET['picture'];
+     $np[":biography"]  = $_GET['biography'];
+     
+     $stmt = $conn->prepare($sql);
+     $stmt->execute($np);
+     
+     echo "Author added!";
+     
+ }
+
+
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Adding New Author </title>
+        <title> Adding New Author</title>
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
     <body>
-        
-        <form>
-            First Name: <input type="text" name="firstName"/> <br />
-            Last Name: <input type="text" name="lastName"/> <br />
-            Gender:
-                <input type="radio" name="gender" value="male" checked> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-            Date of Birth:<input type="date" value="dob"><br>
-            Date of Death:<input type="date" value="dod"><br>
-            Profession:<input type="text" name="profession"><br>
-            Country: 
-                <select name="country">
-                    <option value="USA">USA</option>
-                    <option value="Germany">Germany</option>
-                    <option value="China">China</option>
-                    <option value="India">India</option>
-                </select><br>
-            Picture URL:<input type="text" name="picture"><br>
-            Biography:<input type="textarea" name="biography"><br>
-            
-            <input type="submit" value="Add Author" name="addForm">
-        </form>
 
+        <h1> Add New Author </h1>
+        
+        <fieldset>
+            
+            <legend> Adding New Author </legend>
+            
+            <form>
+                
+                First Name: <input type="text" name="firstName"/> <br />
+                Last Name: <input type="text" name="lastName"/> <br />
+                Gender: <input type="radio" name="gender" value="F"
+                            id="genderF"/><label for="genderF"></label>Female
+                         <input type="radio" name="gender" value="M"
+                            id="genderM"/><label for="genderF"></label>Male <br />   
+                Birth Date: <input type="date" name="dob"/><br /> 
+                Death Date: <input type="date" name="dod"/><br /> 
+                Profession: <input type="text" name="profession"/><br /> 
+                Country: <select name="country">
+                            <option>USA</option>
+                            <option>Germany</option>
+                            <option>China</option>
+                            <option>India</option>
+                        </select><br /> 
+                Picture URL: <input type="text" name="picture"/>   <br>
+                Biography: <br /> <textarea name="biography" cols="55" rows="5"></textarea><br>
+                <input type="submit" value="Add Author" name="addForm">
+            </form>
+            
+        </fieldset>
     </body>
 </html>

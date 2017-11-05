@@ -1,0 +1,32 @@
+body{
+    background:lightblue;
+    font-size:30px;
+    text-align: center;
+}
+
+#addAuthor{
+    text-align:center;
+}
+
+#logout{
+     text-align:center;
+     position: relative;
+     top:0px;
+}
+
+.author{
+    text-align: left
+   
+}
+
+h1{
+    text-align:center;
+}
+
+#update{
+    text-align:left;
+}
+
+#wrong{
+    color:red;
+}
