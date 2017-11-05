@@ -1,24 +1,66 @@
 <?php
 
-function getAuthorInfo(){
-    include '../../dbConnection.php';
-    $conn= getDatabaseConnection();
-    
-    $sql="SELECT *
-    FROM q_author
-    WHERE authorId = " .$_GET['authorId'];
-    
-    $stmt=$conn->prepare($sql);
-    $stmt->execute($namedParameters);
-    $record=$stmt->fetch(PDO::FETCH_ASSOC);
-    
-}    
+session_start();
 
-
-if(isset($_GET['authorId'])){
-    $authorInfo= getAuthorInfo();
+if (!isset($_SESSION['username'])) { //checks whether admin has already logged in
+    
+    header("Location: index.php");
+    exit;
+    
 }
+
+include '../../dbConnection.php';
+$conn = getDatabaseConnection();
+
+function getAuthorInfo() {
+    global $conn;
+        
+    $sql = "SELECT *
+            FROM q_author
+            WHERE authorId = " . $_GET['authorId'];    
+     
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($namedParameters);
+    $record = $stmt->fetch(PDO::FETCH_ASSOC);  
+    return $record;
+}
+
+if (isset($_GET['updateForm'])) { //Admin submitted update form
+    
+    //echo "Update form was submitted!";
+    
+    $sql = "UPDATE q_author SET 
+	            firstName = :fName,
+	            lastName = :lName,
+	            gender = :gender
+            WHERE authorId = :authorId";
+    
+    $namedParameters = array();
+    $namedParameters[':fName'] = $_GET['firstName'];
+    $namedParameters[':lName'] = $_GET['lastName'];
+    $namedParameters[':gender'] = $_GET['gender'];
+    $namedParameters[':authorId'] = $_GET['authorId'];
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($namedParameters);
+    echo "Record was updated!";
+
+    
+}
+
+
+if (isset($_GET['authorId'])) {
+    
+    $authorInfo = getAuthorInfo();  
+    
+    //print_r($authorInfo);
+    
+}
+
+
+
+
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
