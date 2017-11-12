@@ -5,14 +5,22 @@ body{
 }
 
 .jumbotron {
-    background-color:#edf2f9;
+    background-color:#AFEEEE;
+    opacity: .9;
+}
+
+h1{
+    font-family: 'Oleo Script', cursive;
+    font-size:40px;
 }
 
 #directions {
-    background-color:#edf2f9;
+    background-color:#AFEEEE;
+    opacity: .9;
     font-size: 2em;    
     width:900px;
-    height:200px;
+    height:425px;
     margin:0 auto;
     border-radius:20px;
+    padding:10px;
 }
