@@ -10,6 +10,11 @@
            
            var guessCount=1;
            var resetButton=document.querySelector('#reset');
+           var winCount=0;
+           var looseCount=0;
+           var wins=document.querySelector('#wins');
+           var losses=document.querySelector('#losses');
+           
            guessField.focus();
            resetButton.style.display="none";
            
@@ -27,10 +32,23 @@
                         lastResult.innerHTML='Congradulations! You got it right!';
                         lastResult.style.backgroundColor='green';
                         lowOrHi.innerHTML='';
+                        winCount++;
+                        
                         setGameOver();
+                    }
+                    //guess not in range
+                    else if(userGuess>99){
+                        lastResult.innerHTML='Your guess is larger than 99. Try a different guess ';
+                       guessCount--;
+                    }
+                    else if(isNaN(userGuess)){
+                        lastResult.innerHTML='Your guess is not a number. Try a different guess ';
+                        guessCount--;
                     }
                     else if(guessCount===7){
                         lastResult.innerHTML='Sorry, you lost!';
+                        looseCount++;
+                        
                         setGameOver();
                     }
                     else{
@@ -46,6 +64,8 @@
                     guessCount++;
                     guessField.value='';
                     guessField.focus();
+                    losses.innerHTML='Losses: '+ looseCount;
+                    wins.innerHTML='Wins: '+ winCount;
             }
             //error?
             guessSubmit.addEventListener('click', checkGuess);
