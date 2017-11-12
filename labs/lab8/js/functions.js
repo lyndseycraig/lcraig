@@ -16,7 +16,8 @@
            var losses=document.querySelector('#losses');
            
            guessField.focus();
-           resetButton.style.display="none";
+           //resetButton.style.display="none";
+           $("#reset").hide();
            
             console.log(randomNumber);
             //document.getElementById("numbertoGuess").innerHTML=randomNumber;
@@ -30,7 +31,8 @@
                 
                     if(userGuess===randomNumber){
                         lastResult.innerHTML='Congradulations! You got it right!';
-                        lastResult.style.backgroundColor='green';
+                        //lastResult.style.backgroundColor='green';
+                        $("#lastResult").css("background-color", "green");
                         lowOrHi.innerHTML='';
                         winCount++;
                         
@@ -46,14 +48,16 @@
                         guessCount--;
                     }
                     else if(guessCount===7){
-                        lastResult.innerHTML='Sorry, you lost!';
+                        //lastResult.innerHTML='Sorry, you lost!';
+                        $("#lastResult").text("Sorry, you lost!");
                         looseCount++;
                         
                         setGameOver();
                     }
                     else{
                         lastResult.innerHTML="Wrong!";
-                        lastResult.style.backgroundColor='red';
+                        //lastResult.style.backgroundColor='red';
+                        $("#lastResult").css("background-color", "red");
                         if(userGuess<randomNumber){
                             lowOrHi.innerHTML='Last guess was too low!';
                         }
@@ -84,7 +88,8 @@
                    resetParas[i].textContent='';
                }
                
-               resetButton.style.display='none';
+               //resetButton.style.display='none';
+               $("#reset").hide();
                
                guessField.disabled=false;
                guessSubmit.disabled=false;
