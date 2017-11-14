@@ -47,7 +47,7 @@
                         lastResult.innerHTML='Your guess is not a number. Try a different guess ';
                         guessCount--;
                     }
-                    else if(guessCount===7){
+                    else if(guessCount===7){7
                         //lastResult.innerHTML='Sorry, you lost!';
                         $("#lastResult").text("Sorry, you lost!");
                         looseCount++;

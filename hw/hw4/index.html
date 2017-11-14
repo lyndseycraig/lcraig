@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avacado Quiz</title>
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <!--Bootstrap files-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script SRC="js/functions.js"></script>
+        <!--Custom Styles-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Roboto" rel="stylesheet">  
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-4"></div>
+        <div class="col-md-6"><
+        <div id="quiz">
+        <form>
+            <h1>Avacado Quiz</h1>
+            1. True or False, avacados have more potassium than bannanas.<br>
+            <input type="radio" value="true" class="question1">True
+            <input type="radio" value="false" class="question1" >False
+            <p id="question1"></p><br><br>
+            
+            <!--<p id="question1"></p>-->
+            
+            
+            2. Avacados have around 20 
+            <input type="text" name="question2" class="question2"> 
+            and minerals per serving.<br>
+            
+            <p id="question2"></p><br><br>
+            <br><br>
+            
+            3. Avacados are often made into a dip called 
+            <select name="question3" class="question3">
+                <option value="Hummus">Hummus</option>
+                <option value="Guacamole">Guacamole</option>
+                <option value="Thousand Island">Thousand Island</option>
+                <option value="Ketchup">Ketchup</option>
+            </select><br><br>
+           
+            4. The largest avacado growing country is<br>
+            <input type="radio" value="America" class="question4">America<br>
+            <input type="radio" value="Chile" class="question4">Chile<br>
+            <input type="radio" value="Mexico" class="question4">Mexico<br>
+            <input type="radio" value="Greece" class="question4">Greece<br><br>
+            
+            5. Avacados are toxic to 
+            <select name="question5" class="question5">
+                <option value="Horses">Horses</option>
+                <option value="Unicorns">Unicorns</option>
+                <option value="Bears">Bears</option>
+                <option value="Coyotes">Coyotes</option>
+            </select><br><br>
+            
+            6. Avacado can be spread on toast instead of 
+            <input type="text" name="question6" class="question6"> in the morning
+            for breakfast.
+            <br><br>
+            
+        <!--<input type="submit" value="Submit" class="submitAnswers">-->
+       <button onclick="check123()">Submit!</button>
+        </form>
+        </div>
+        </div>
+        <div class="col-md-4"></div>
+        </div>
+        
+        
+    </body>
+</html>
