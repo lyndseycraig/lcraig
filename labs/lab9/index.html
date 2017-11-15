@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="gr__ilearn_csumb_edu"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AJAX: Sign Up Page</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+       function getCity() {
+            
+            //alert($("#zip").val());
+            $.ajax({
+
+                type: "GET",
+                url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
+                dataType: "json",
+                data: { "zip": $("#zip").val()},
+                success: function(data,status) {
+                
+                   //alert(data.city);
+                   $("#city").html(data.city);
+                
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                //alert(status);
+                }
+
+            });//ajax
+            
+        }//getCity()
+    </script>
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+   <h1> Sign Up Form </h1>
+
+    <form onsubmit="return false">
+        <fieldset>
+           <legend>Sign Up</legend>
+            First Name:  <input type="text"><br> 
+            Last Name:   <input type="text"><br> 
+            Email:       <input type="text"><br> 
+            Phone Number:<input type="text"><br><br>
+            Zip Code:    <input type="text" onchange="getCity()"><br>
+            City: 
+            <br>
+            Latitude: 
+            <br>
+            Longitude:
+            <br><br>
+            State: <input type="text"><br>
+            Select a County: <select></select><br>
+            
+            Desired Username: <input type="text"><br>
+            Password: <input type="password"><br>
+            Type Password Again: <input type="password"><br>
+            <input value="Sign up!" type="submit">
+        </fieldset>
+    </form>
+
+
+
+
+</body></html>
