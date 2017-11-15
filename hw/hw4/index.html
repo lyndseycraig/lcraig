@@ -35,7 +35,7 @@
                     
                      score++;
                 } else {
-                    document.getElementById("q1Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect.";
+                    document.getElementById("q1Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer is true.";
                    
                     q1Check.style.color="red";
                 }
@@ -59,7 +59,7 @@
                 }
                 
                 else{
-                    document.getElementById("q2Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was nutrients";
+                    document.getElementById("q2Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was vitamins.";
                     q2Check.style.color="red";
                 }
                 
@@ -75,13 +75,45 @@
                 }
                 
                 
-                ;
-                document.getElementById("score").innerHTML = "You have recieved a score of "+correct() +"!";
+                
+                //document.getElementById("score").innerHTML = "You have recieved a score of "+correct() +"!";
             }
             
-            /*function check456(){
+            function check456(){
                 
-            }*/
+                if ($("input[name=question4]:checked").val()=="Mexico"){
+                     $("#q4Check").append ("&#10004 Congradulations! You got it right!");
+                     q4Check.style.color="green";
+                    
+                     score++;
+                } else {
+                    document.getElementById("q4Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer is Mexico.";
+                   
+                    q4Check.style.color="red";
+                }
+                
+                if (($("#question5").val())=="Horses"){
+                     $("#q5Check").append ("&#10004 Congradulations! You got it right!");
+                     q5Check.style.color="green";
+                    
+                     score++;
+                } else {
+                    document.getElementById("q4Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer is Horses.";
+                   
+                    q4Check.style.color="red";
+                }
+                
+                if (($("#question6").val())=="butter"){
+                     $("#q6Check").append ("&#10004 Congradulations! You got it right!");
+                     q6Check.style.color="green";
+                    
+                     score++;
+                } else {
+                    document.getElementById("q4Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer is butter.";
+                   
+                    q4Check.style.color="red";
+                }
+            }
             
             function correct(){
                 
@@ -136,10 +168,10 @@
             <p id="q3Check"></p><br>
            
             4. The largest avacado growing country is<br>
-            <input type="radio" value="America" name="question4" id="question4">America<br>
-            <input type="radio" value="Chile" name="question4" id="question4">Chile<br>
-            <input type="radio" value="Mexico" name="question4" id="question4">Mexico<br>
-            <input type="radio" value="Greece" name="question4" id="question4">Greece<br>
+            <input type="radio" name="question4" id="question4" value="America">America<br>
+            <input type="radio" name="question4" id="question4" value="Chile">Chile<br>
+            <input type="radio"  name="question4" id="question4" value="Mexico">Mexico<br>
+            <input type="radio" name="question4" id="question4" value="Greece">Greece<br>
             <p id="q4Check"></p><br><br>
             
             5. Avacados are toxic to 
@@ -157,7 +189,7 @@
             <br>
             <p id="q6Check"></p><br>
             
-       <input type="button" value="Submit" onClick="check123();">
+       <input type="button" value="Submit" onClick="check123();check456();">
        
         </form>
         
