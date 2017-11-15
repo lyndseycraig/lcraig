@@ -30,13 +30,14 @@
             function check123()/*checked with JavaScript*/{
                 
                 if (document.forms["quizForm"]["question1"].value =="true"){
-                     document.getElementById("q1Check").innerHTML = "Congradulations! You got it right!"; 
+                     document.getElementById("q1Check").innerHTML = "&#10004 Congradulations! You got it right!";
+                     q1Check.style.color="green";
                     
                      score++;
                 } else {
-                    document.getElementById("q1Check").innerHTML = "Sorry, the answer you got was incorrect.";
+                    document.getElementById("q1Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect.";
                    
-                    
+                    q1Check.style.color="red";
                 }
                 
                 
@@ -52,21 +53,25 @@
                 
                 if(document.forms["quizForm"]["question2"].value =="vitamins"){
                     //question2.innerHTML='You have chosen the correct answer';
-                     document.getElementById("q2Check").innerHTML = "Congradulations! You got it right!"; 
+                     document.getElementById("q2Check").innerHTML = "&#10004 Congradulations! You got it right!"; 
                      score++;
+                     q2Check.style.color="green";
                 }
                 
                 else{
-                    document.getElementById("q2Check").innerHTML = "Sorry, the answer you got was incorrect. The correct answer was nutrients";
+                    document.getElementById("q2Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was nutrients";
+                    q2Check.style.color="red";
                 }
                 
                 if(document.forms["quizForm"]["question3"].value =="Guacamole"){
-                    document.getElementById("q3Check").innerHTML = "Congradulations! You got it right!";
+                    document.getElementById("q3Check").innerHTML = "&#10004 Congradulations! You got it right!";
                     score++;
+                    q3Check.style.color="green";
                 }
                 
                 else{
-                    document.getElementById("q3Check").innerHTML = "Sorry, the answer you got was incorrect. The correct answer was guacamole";
+                    document.getElementById("q3Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was guacamole";
+                    q3Check.style.color="red";
                 }
                 
                 
