@@ -82,36 +82,36 @@
             function check456(){
                 
                 if ($("input[name=question4]:checked").val()=="Mexico"){
-                     $("#q4Check").append ("&#10004 Congradulations! You got it right!");
+                     $("#q4Check").html("&#10004 Congradulations! You got it right!");
                      q4Check.style.color="green";
                     
                      score++;
                 } else {
-                    document.getElementById("q4Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer is Mexico.";
+                    $("#q4Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is Mexico.");
                    
                     q4Check.style.color="red";
                 }
                 
                 if (($("#question5").val())=="Horses"){
-                     $("#q5Check").append ("&#10004 Congradulations! You got it right!");
+                     $("#q5Check").html("&#10004 Congradulations! You got it right!");
                      q5Check.style.color="green";
                     
                      score++;
                 } else {
-                    document.getElementById("q4Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer is Horses.";
+                    $("#q5Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is Horses.");
                    
-                    q4Check.style.color="red";
+                    q5Check.style.color="red";
                 }
                 
                 if (($("#question6").val())=="butter"){
-                     $("#q6Check").append ("&#10004 Congradulations! You got it right!");
+                     $("#q6Check").html("&#10004 Congradulations! You got it right!");
                      q6Check.style.color="green";
                     
                      score++;
                 } else {
-                    document.getElementById("q4Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer is butter.";
+                    $("#q6Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is butter.");
                    
-                    q4Check.style.color="red";
+                    q6Check.style.color="red";
                 }
             }
             
