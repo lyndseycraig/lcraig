@@ -25,9 +25,19 @@
             //var question6=document.querySelector('.question6');
             var q6=document.quizForm.question6;
             
-            var score=0;
+            
+            function grade(){
+                var total=check123()+check456();
+                //alert(total);
+                $("#score").html("Your score is "+((total/6)*100)+"%");
+                
+                if(total>4){
+                    $("#score").append("Congrats, you got over 80%!");
+                }
+            }
             
             function check123()/*checked with JavaScript*/{
+            var score=0;   
                 
                 if (document.forms["quizForm"]["question1"].value =="true"){
                      document.getElementById("q1Check").innerHTML = "&#10004 Congradulations! You got it right!";
@@ -73,19 +83,16 @@
                     document.getElementById("q3Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was guacamole";
                     q3Check.style.color="red";
                 }
-                
-                
-                
-                //document.getElementById("score").innerHTML = "You have recieved a score of "+correct() +"!";
+                return score;
             }
             
             function check456(){
-                
+                var score2=0;
                 if ($("input[name=question4]:checked").val()=="Mexico"){
                      $("#q4Check").html("&#10004 Congradulations! You got it right!");
                      q4Check.style.color="green";
                     
-                     score++;
+                     score2++;
                 } else {
                     $("#q4Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is Mexico.");
                    
@@ -96,7 +103,7 @@
                      $("#q5Check").html("&#10004 Congradulations! You got it right!");
                      q5Check.style.color="green";
                     
-                     score++;
+                     score2++;
                 } else {
                     $("#q5Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is Horses.");
                    
@@ -107,27 +114,17 @@
                      $("#q6Check").html("&#10004 Congradulations! You got it right!");
                      q6Check.style.color="green";
                     
-                     score++;
+                     score2++;
                 } else {
                     $("#q6Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is butter.");
                    
                     q6Check.style.color="red";
                 }
+                
+                
+               return score2; 
             }
             
-            function correct(){
-                
-                var final=(score/6);
-                
-                if(score==0){
-                    final=0;
-                }
-                
-                return final;
-                
-                
-                
-            }
             
             
             
@@ -189,10 +186,10 @@
             <br>
             <p id="q6Check"></p><br>
             
-       <input type="button" value="Submit" onClick="check123();check456();">
+       <input type="button" value="Submit" onClick="grade();">
        
         </form>
-        
+        <br><br><br>
         <p id="score"></p><br>
         </div>
         </div>
