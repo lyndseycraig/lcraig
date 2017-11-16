@@ -32,7 +32,7 @@
                 $("#score").html("Your score is "+((total/6)*100)+"%");
                 
                 if(total>4){
-                    $("#score").append("Congrats, you got over 80%!");
+                    $("#score").append(" Congrats, you got over 80% correct!");
                 }
             }
             
@@ -40,7 +40,7 @@
             var score=0;   
                 
                 if (document.forms["quizForm"]["question1"].value =="true"){
-                     document.getElementById("q1Check").innerHTML = "&#10004 Congradulations! You got it right!";
+                     document.getElementById("q1Check").innerHTML = "&#10004 Congratulations! You got it right!";
                      q1Check.style.color="green";
                     
                      score++;
@@ -63,7 +63,7 @@
                 
                 if(document.forms["quizForm"]["question2"].value =="vitamins"){
                     //question2.innerHTML='You have chosen the correct answer';
-                     document.getElementById("q2Check").innerHTML = "&#10004 Congradulations! You got it right!"; 
+                     document.getElementById("q2Check").innerHTML = "&#10004 Congratulations! You got it right!"; 
                      score++;
                      q2Check.style.color="green";
                 }
@@ -74,13 +74,13 @@
                 }
                 
                 if(document.forms["quizForm"]["question3"].value =="Guacamole"){
-                    document.getElementById("q3Check").innerHTML = "&#10004 Congradulations! You got it right!";
+                    document.getElementById("q3Check").innerHTML = "&#10004 Congratulations! You got it right!";
                     score++;
                     q3Check.style.color="green";
                 }
                 
                 else{
-                    document.getElementById("q3Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was guacamole";
+                    document.getElementById("q3Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was Guacamole";
                     q3Check.style.color="red";
                 }
                 return score;
@@ -89,7 +89,7 @@
             function check456(){
                 var score2=0;
                 if ($("input[name=question4]:checked").val()=="Mexico"){
-                     $("#q4Check").html("&#10004 Congradulations! You got it right!");
+                     $("#q4Check").html("&#10004 Congratulations! You got it right!");
                      q4Check.style.color="green";
                     
                      score2++;
@@ -100,7 +100,7 @@
                 }
                 
                 if (($("#question5").val())=="Horses"){
-                     $("#q5Check").html("&#10004 Congradulations! You got it right!");
+                     $("#q5Check").html("&#10004 Congratulations! You got it right!");
                      q5Check.style.color="green";
                     
                      score2++;
@@ -111,7 +111,7 @@
                 }
                 
                 if (($("#question6").val())=="butter"){
-                     $("#q6Check").html("&#10004 Congradulations! You got it right!");
+                     $("#q6Check").html("&#10004 Congratulations! You got it right!");
                      q6Check.style.color="green";
                     
                      score2++;
@@ -161,7 +161,7 @@
                 <option value="Guacamole">Guacamole</option>
                 <option value="Thousand Island">Thousand Island</option>
                 <option value="Ketchup">Ketchup</option><br>
-            </select><br><br>
+            </select><br>
             <p id="q3Check"></p><br>
            
             4. The largest avacado growing country is<br>
@@ -169,7 +169,7 @@
             <input type="radio" name="question4" id="question4" value="Chile">Chile<br>
             <input type="radio"  name="question4" id="question4" value="Mexico">Mexico<br>
             <input type="radio" name="question4" id="question4" value="Greece">Greece<br>
-            <p id="q4Check"></p><br><br>
+            <p id="q4Check"></p><br>
             
             5. Avacados are toxic to 
             <select name="question5" id="question5">
@@ -184,12 +184,12 @@
             <input type="text" name="question6" id="question6"> in the morning
             for breakfast.
             <br>
-            <p id="q6Check"></p><br>
+            <p id="q6Check"></p>
             
        <input type="button" value="Submit" onClick="grade();">
        
         </form>
-        <br><br><br>
+        <br>
         <p id="score"></p><br>
         </div>
         </div>
