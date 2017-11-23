@@ -1,0 +1,49 @@
+body{
+    background:#bcff1a;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+    display:block;
+}
+
+h1{
+    font-family: 'Lily Script One', cursive;
+    font-size:50px;
+}
+
+fieldset{
+    border:none;
+    display:block;
+}
+
+input{
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
+    padding:4px;
+    border-color:none;
+    border-radius: 7px;
+    
+    border-style: double;
+    
+}
+
+select{
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
+    padding:4px;
+    border-color:none;
+    border-radius: 7px;
+    
+    border-style: double;
+    
+}
+
+legend{
+    display:none;
+}
+
+#form{
+    padding:25px;
+    background-color: rgba(192,192,192,0.1);
+    width:700px;
+    
+}

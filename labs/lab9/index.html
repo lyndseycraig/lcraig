@@ -1,63 +1,165 @@
 <!DOCTYPE html>
-<html class="gr__ilearn_csumb_edu"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- saved from url=(0080)https://ilearn.csumb.edu/pluginfile.php/721164/mod_resource/content/0/index.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>AJAX: Sign Up Page</title>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lily+Script+One|Roboto" rel="stylesheet"> 
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <script>
-       function getCity() {
-            
+        function getCity() {
+
             //alert($("#zip").val());
             $.ajax({
 
-                type: "GET",
+                type: "get",
                 url: "http://itcdland.csumb.edu/~milara/ajax/cityInfoByZip.php",
                 dataType: "json",
-                data: { "zip": $("#zip").val()},
-                success: function(data,status) {
-                
-                   //alert(data.city);
-                   $("#city").html(data.city);
-                
+                data: { "zip": $("#zip").val() },
+                success: function(data, status) {
+                    if(data==false){
+                        $("#zipCheck").html("Zip code not found.");
+                        $("#city").html("");
+                        $("#lat").html("");
+                        $("#long").html("");
+                    }
+                    
+                    else{
+                    //alert(data.city);
+                    $("#zipCheck").html("");
+                    $("#city").html(data.city);
+                    $("#lat").html(data.latitude);
+                    $("#long").html(data.longitude);
+                    }
                 },
-                complete: function(data,status) { //optional, used for debugging purposes
-                //alert(status);
+                complete: function(data, status) { //optional, used for debugging purposes
+                    //alert(status);
                 }
 
-            });//ajax
+            }); //ajax
+
+        } //getCity()
+
+        function getCounties() {
+            // alert($("#state").val());
+            $.ajax({
+
+                type: "get",
+                url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
+                dataType: "json",
+                data: { "state": $("#state").val() },
+                success: function(data, status) {
+                    $('#county').html("<option> Select one </option>");
+                    for (var i = 0; i < data.length; i++) {
+                        $("#county").append("<option>" + data[i].county + "</option>");
+                    } //alert(data[0].county);
+
+                },
+                complete: function(data, status) { //optional, used for debugging purposes
+                    //alert(status);
+                }
+
+            }); //ajax
+        }
+
+        function checkUsername() {
+            //alert($("#username").val());
+            $.ajax({
+
+                type: "GET",
+                url: "checkUsernameAPI.php",
+                dataType: "json",
+                data: { "username":$("#username").val() },
+                success: function(data, status) {
+                    //alert(data);
+                    
+                    if (data == false ) {
+                        $("#userCheck").html("Available");
+                        $("#userCheck").css("color","green");
+                    } else {
+                        $("#userCheck").html("Unavailable");
+                        $("#userCheck").css("color","red");
+                    }
+                     
+
+                },
+                complete: function(data, status) { //optional, used for debugging purposes
+                    //alert(status);
+                }
+
+            }); //ajax
+        }
+        
+        function passCheck(){
             
-        }//getCity()
+                    
+            if(($("#pass1").val())===($("#pass2").val())){
+                
+                $("#correct").html("Your passwords match.");
+                $("#correct").css("color","green");
+            }
+           
+            else{
+                
+                $("#correct").html("Your passwords do not match. Please try again.");
+                $("#correct").css("color","red");
+            }
+                
+        }
+
+        $(document).ready(function() {
+
+            $("#zip").change(function() { getCity() });
+            $("#state").change(function() { getCounties() });
+            $("#username").change(function() { checkUsername() });
+            
+        }); //document.ready
     </script>
-</head>
-
-<body data-gr-c-s-loaded="true">
-
-   <h1> Sign Up Form </h1>
+    </head>
+    <body>
+        
+    <div class="row">
+    <div class="col-md-2 col-lg-4"></div>
+    <div class="col-md-8 col-lg-6">
+    <div id="form">
+    <h1> Sign Up Form </h1>
 
     <form onsubmit="return false">
         <fieldset>
-           <legend>Sign Up</legend>
-            First Name:  <input type="text"><br> 
-            Last Name:   <input type="text"><br> 
-            Email:       <input type="text"><br> 
-            Phone Number:<input type="text"><br><br>
-            Zip Code:    <input type="text" onchange="getCity()"><br>
-            City: 
-            <br>
-            Latitude: 
-            <br>
-            Longitude:
-            <br><br>
-            State: <input type="text"><br>
-            Select a County: <select></select><br>
-            
-            Desired Username: <input type="text"><br>
-            Password: <input type="password"><br>
-            Type Password Again: <input type="password"><br>
-            <input value="Sign up!" type="submit">
+            <legend>Sign Up</legend>
+            First Name: <input type="text"><br> Last Name: <input type="text"><br> 
+            Email: <input type="text"><br> Phone Number: <input type="text"><br><br> 
+            Zip Code: <input type="text" id="zip"><span id="zipCheck"></span><br> 
+            City: <span id="city"></span>
+            <br> Latitude: <span id="lat"></span>
+            <br> Longitude: <span id="long"></span>
+            <br><br> State:
+            <select id="state">
+                <option>--- Select One ---</option>
+                <option value="ak">Alaska </option>
+                <option value="az">Arizona </option>
+                <option value="ca">California </option>
+                <option value="hi">Hawaii </option>
+            </select><br> 
+            Select a County: <select id="county">
+                <option ></option>
+            </select><br> Desired Username: <input type="text" id="username">
+            <span id="userCheck"></span><br> 
+            Password: <input id="pass1" type="password" onchange="passCheck()"><br> Type Password Again: <input id="pass2" type="password" onchange="passCheck()">
+            <span id="correct"></span><br>
+            <input type="submit" value="Sign up!">
         </fieldset>
     </form>
+    </span>
+    </div>
+    <div class="col-md-2 col-lg-2"></div>
+    </div>
 
 
+    </body>
 
-
-</body></html>
+</html>
