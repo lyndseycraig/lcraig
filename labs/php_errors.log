@@ -359,3 +359,11 @@ Stack trace:
 [05-Nov-2017 19:06:53 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/lcraig/labs/lab7/updateAuthor.php on line 39
 [05-Nov-2017 19:06:53 UTC] PHP Stack trace:
 [05-Nov-2017 19:06:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab7/updateAuthor.php:0
+[28-Nov-2017 18:37:07 UTC] PHP Fatal error:  Call to undefined function move_uploaded_files() in /home/ubuntu/workspace/lcraig/labs/lab10/index.php on line 6
+[28-Nov-2017 18:37:07 UTC] PHP Stack trace:
+[28-Nov-2017 18:37:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab10/index.php:0
+[28-Nov-2017 18:56:56 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/ubuntu/workspace/lcraig/labs/lab10/index.php on line 3
+[28-Nov-2017 19:29:05 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/lcraig/labs/lab10/index.php on line 22
+[28-Nov-2017 19:29:05 UTC] PHP Stack trace:
+[28-Nov-2017 19:29:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/labs/lab10/index.php:0
+[28-Nov-2017 19:29:05 UTC] PHP   2. displayImages() /home/ubuntu/workspace/lcraig/labs/lab10/index.php:46

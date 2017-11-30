@@ -1,0 +1,236 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) { 
+    header("Location: index.php"); //redirects users to login page
+    
+    exit;
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Avacado Quiz</title>
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <!--Bootstrap files-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!--Custom Styles-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script|Roboto" rel="stylesheet">  
+        
+        <script>
+        
+        function pastScores() {
+            //alert($("#username").val());
+            $.ajax({
+
+                type: "GET",
+                url: "checkResults.php",
+                dataType: "json",
+                data: { "score":$("#score").val() },
+                success: function(data, status) {
+                    //alert(data);
+                    
+                     
+
+                },
+                complete: function(data, status) { //optional, used for debugging purposes
+                    //alert(status);
+                }
+
+            }); //ajax
+        }
+            //var question1=document.querySelector('.question1');
+            var q1=document.quizForm.question1;
+            //var question2=document.querySelector('.question2');
+            var q2=document.quizForm.question2;
+            //var question3=document.querySelector('.question3');
+            var q3=document.quizForm.question3;
+            //var question4=document.querySelector('.question4');
+            var q4=document.quizForm.question4;
+            //var question5=document.querySelector('.question5');
+            var q5=document.quizForm.question5;
+            //var question6=document.querySelector('.question6');
+            var q6=document.quizForm.question6;
+            
+            
+            function grade(){
+                var total=check123()+check456();
+                //alert(total);
+                $("#score").html("Your score is "+((total/6)*100)+"%");
+                
+                if(total>4){
+                    $("#score").append(" Congrats, you got over 80% correct!");
+                }
+            }
+            
+            function check123()/*checked with JavaScript*/{
+            var score=0;   
+                
+                if (document.forms["quizForm"]["question1"].value =="true"){
+                     document.getElementById("q1Check").innerHTML = "&#10004 Congratulations! You got it right!";
+                     q1Check.style.color="green";
+                    
+                     score++;
+                } else {
+                    document.getElementById("q1Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer is true.";
+                   
+                    q1Check.style.color="red";
+                }
+                
+                
+                /*if(q1=="true"){
+                    
+                     question1.innerHTML='Congradulations! You got it right!';
+                     document.getElementById("q1Check").innerHTML = "Congradulations! You got it right!"; 
+                     score++;
+                }
+                else{
+                   document.getElementById("q1Check").innerHTML = "Sorry, the answer you got was incorrect.";
+               }*/
+                
+                if(document.forms["quizForm"]["question2"].value =="vitamins"){
+                    //question2.innerHTML='You have chosen the correct answer';
+                     document.getElementById("q2Check").innerHTML = "&#10004 Congratulations! You got it right!"; 
+                     score++;
+                     q2Check.style.color="green";
+                }
+                
+                else{
+                    document.getElementById("q2Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was vitamins.";
+                    q2Check.style.color="red";
+                }
+                
+                if(document.forms["quizForm"]["question3"].value =="Guacamole"){
+                    document.getElementById("q3Check").innerHTML = "&#10004 Congratulations! You got it right!";
+                    score++;
+                    q3Check.style.color="green";
+                }
+                
+                else{
+                    document.getElementById("q3Check").innerHTML = "&#10006 Sorry, the answer you got was incorrect. The correct answer was Guacamole";
+                    q3Check.style.color="red";
+                }
+                return score;
+            }
+            
+            function check456(){
+                var score2=0;
+                if ($("input[name=question4]:checked").val()=="Mexico"){
+                     $("#q4Check").html("&#10004 Congratulations! You got it right!");
+                     q4Check.style.color="green";
+                    
+                     score2++;
+                } else {
+                    $("#q4Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is Mexico.");
+                   
+                    q4Check.style.color="red";
+                }
+                
+                if (($("#question5").val())=="Horses"){
+                     $("#q5Check").html("&#10004 Congratulations! You got it right!");
+                     q5Check.style.color="green";
+                    
+                     score2++;
+                } else {
+                    $("#q5Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is Horses.");
+                   
+                    q5Check.style.color="red";
+                }
+                
+                if (($("#question6").val())=="butter"){
+                     $("#q6Check").html("&#10004 Congratulations! You got it right!");
+                     q6Check.style.color="green";
+                    
+                     score2++;
+                } else {
+                    $("#q6Check").html("&#10006 Sorry, the answer you got was incorrect. The correct answer is butter.");
+                   
+                    q6Check.style.color="red";
+                }
+                
+                
+               return score2; 
+            }
+            
+            
+            
+            
+            //submitAnswers.addEventListener('click', check123);
+            //submitAnswers.addEventListener('click', check456);
+        </script>
+        
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-4"></div>
+        <div class="col-md-6">
+        <div id="quiz">
+        <form action="addScore.php" name="quizForm" id="quizForm" method="get">
+            <h1>Avacado Quiz</h1>
+            1. True or False, avacados have more potassium than bannanas.<br>
+            <input type="radio" name="question1"  id="question1" value="true">True
+            <input type="radio" name="question1" id="question1" value="false">False
+            <p id="q1Check"></p><br>
+            
+            <!--<p id="question1"></p>-->
+            
+            
+            2. Avacados have around 20 
+            <input type="text" name="question2" class="question2"> 
+            and minerals per serving.<br>
+            
+            <p id="q2Check"></p><br>
+            
+            
+            3. Avacados are often made into a dip called 
+            <select name="question3" id="question3">
+                <option value="Hummus">Hummus</option>
+                <option value="Guacamole">Guacamole</option>
+                <option value="Thousand Island">Thousand Island</option>
+                <option value="Ketchup">Ketchup</option><br>
+            </select><br>
+            <p id="q3Check"></p><br>
+           
+            4. The largest avacado growing country is<br>
+            <input type="radio" name="question4" id="question4" value="America">America<br>
+            <input type="radio" name="question4" id="question4" value="Chile">Chile<br>
+            <input type="radio"  name="question4" id="question4" value="Mexico">Mexico<br>
+            <input type="radio" name="question4" id="question4" value="Greece">Greece<br>
+            <p id="q4Check"></p><br>
+            
+            5. Avacados are toxic to 
+            <select name="question5" id="question5">
+                <option value="Horses">Horses</option>
+                <option value="Unicorns">Unicorns</option>
+                <option value="Bears">Bears</option>
+                <option value="Coyotes">Coyotes</option>
+            </select><br>
+            <p id="q5Check"></p><br>
+            
+            6. Avacado can be spread on toast instead of 
+            <input type="text" name="question6" id="question6"> in the morning
+            for breakfast.
+            <br>
+            <p id="q6Check"></p>
+            
+       <input type="button" value="Submit" onClick="grade();">
+       
+        </form>
+        <br>
+        <p id="score"></p><br>
+        </div>
+        </div>
+        <div class="col-md-4"></div>
+        </div>
+        <!--<script SRC="js/functions.js"></script>-->
+        
+        <?php
+        
+        echo $_SESSION['username'];
+        ?>
+    </body>
+</html>

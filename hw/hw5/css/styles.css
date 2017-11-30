@@ -1,0 +1,48 @@
+body{
+    background:#F0E68C;
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#quiz{
+    text-align:center;
+    padding:30px;
+    background:#ADFF2F;
+    border: 15px solid #008000;
+    border-radius: 60%;
+    width:750px;
+    height:1000px;
+    
+}
+
+form{
+   position:relative; 
+   top:30px;
+  
+   
+}
+
+h1{
+    font-family: 'Oleo Script', cursive;
+    font-size:50px;
+}
+
+#circle{
+    height:200px;
+    width:200px;
+    background:#CD853F;
+    text-align:center;
+}
+
+#signin{
+    text-align:center;
+    width:400px;
+    height:550px;
+    border-radius: 60%;
+    border: 15px solid #008000;
+    background:#ADFF2F;
+    padding:20px;
+    padding-bottom: 50px;
+    position:relative;
+    top:50px;
+}
