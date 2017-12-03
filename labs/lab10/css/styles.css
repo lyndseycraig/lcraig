@@ -1,0 +1,19 @@
+body{
+    background:lightblue;
+    font-size:30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    font-size:25px;
+    text-align: center;
+}
+
+
+h1{
+    font-family: 'Lily Script One', cursive;
+    text-align: center;
+    background-color: white;
+    
+}
