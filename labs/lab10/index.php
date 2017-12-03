@@ -54,8 +54,8 @@ function displayImages(){
         <form method="POST" enctype="multipart/form-data">
             Upload file:
             
-            <input type="file" name="myFile"/><br><br>
-            <input type="submit" name="submitForm" value="Upload"/>
+            <input type="file" id="file" name="myFile"/><br><br>
+            <input type="submit" id="submit" name="submitForm" value="Upload"/>
             
             
         </form>

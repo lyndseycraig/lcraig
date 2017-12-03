@@ -8,6 +8,7 @@ body{
 input{
     font-size:25px;
     text-align: center;
+    
 }
 
 
@@ -17,3 +18,10 @@ h1{
     background-color: white;
     
 }
+
+#submit{
+    font-weight:bold;
+    padding:5px;
+    background:#D8BFD8;
+}
+
