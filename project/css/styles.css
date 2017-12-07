@@ -1,0 +1,100 @@
+body{
+    background:#ffc966;
+    font-size:30px;
+    
+}
+
+#addShoe{
+    text-align:center;
+}
+
+#logout{
+     text-align:center;
+     position: relative;
+     top:0px;
+}
+
+.shoe{
+    text-align: left
+   
+}
+
+h1{
+    text-align:center;
+    font-family: 'Oleo Script', cursive;
+    font-size:60px;
+    
+}
+
+#update{
+    text-align:left;
+}
+
+#wrong{
+    color:red;
+}
+
+.back{
+    text-align:right;
+}
+
+#add{
+    text-align:left;
+}
+
+#login{
+    position: relative;
+    left:800px;
+}
+
+#shoename{
+    width:250px;
+    height:40px;
+}
+
+.drop{
+    width:250px;
+}
+
+#front{
+    position:relative;
+    left:220px;
+}
+#filter{
+    position:relative;
+    left:210px;
+}
+
+#shoeOut{
+    color:navy;
+}
+
+.shoeBox{
+    background:white;
+    width:480px;
+    border: 7px solid navy;
+    position: relative;
+    left:230px;
+    padding:10px;
+}
+
+#empty{
+    padding:20px;
+}
+
+#frontTitle{
+    text-align:left;
+    position:relative;
+    left:190px;
+    font-family: 'Oleo Script', cursive;
+    font-size:60px;
+    
+}
+
+#priceButton{
+    text-align:center;
+}
+
+#logForm{
+    text-align:center;
+}

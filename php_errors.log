@@ -12,3 +12,164 @@
 [18-Oct-2017 03:19:50 UTC] PHP Fatal error:  Call to undefined function array_print() in /home/ubuntu/workspace/lcraig/practice/practice_program1.php on line 3
 [18-Oct-2017 03:19:50 UTC] PHP Stack trace:
 [18-Oct-2017 03:19:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/practice/practice_program1.php:0
+[04-Dec-2017 22:25:50 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lcraig/project/loginPage.php on line 4
+[04-Dec-2017 22:25:50 UTC] PHP Stack trace:
+[04-Dec-2017 22:25:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/loginPage.php:0
+[04-Dec-2017 22:25:50 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lcraig/project/loginPage.php on line 4
+[04-Dec-2017 22:25:50 UTC] PHP Stack trace:
+[04-Dec-2017 22:25:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/loginPage.php:0
+[04-Dec-2017 22:25:50 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/lcraig/project/loginPage.php on line 5
+[04-Dec-2017 22:25:50 UTC] PHP Stack trace:
+[04-Dec-2017 22:25:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/loginPage.php:0
+[04-Dec-2017 22:26:44 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lcraig/project/loginPage.php on line 4
+[04-Dec-2017 22:26:44 UTC] PHP Stack trace:
+[04-Dec-2017 22:26:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/loginPage.php:0
+[04-Dec-2017 22:26:44 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lcraig/project/loginPage.php on line 4
+[04-Dec-2017 22:26:44 UTC] PHP Stack trace:
+[04-Dec-2017 22:26:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/loginPage.php:0
+[04-Dec-2017 22:26:44 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/lcraig/project/loginPage.php on line 5
+[04-Dec-2017 22:26:44 UTC] PHP Stack trace:
+[04-Dec-2017 22:26:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/loginPage.php:0
+[04-Dec-2017 22:41:20 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/lcraig/project/admin.php on line 14
+[04-Dec-2017 22:41:20 UTC] PHP Stack trace:
+[04-Dec-2017 22:41:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/admin.php:0
+[04-Dec-2017 22:41:20 UTC] PHP   2. shoeList() /home/ubuntu/workspace/lcraig/project/admin.php:57
+[04-Dec-2017 22:41:20 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/lcraig/project/admin.php on line 14
+[04-Dec-2017 22:41:20 UTC] PHP Stack trace:
+[04-Dec-2017 22:41:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/admin.php:0
+[04-Dec-2017 22:41:20 UTC] PHP   2. shoeList() /home/ubuntu/workspace/lcraig/project/admin.php:57
+[04-Dec-2017 22:41:20 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/lcraig/project/admin.php on line 15
+[04-Dec-2017 22:41:20 UTC] PHP Stack trace:
+[04-Dec-2017 22:41:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/admin.php:0
+[04-Dec-2017 22:41:20 UTC] PHP   2. shoeList() /home/ubuntu/workspace/lcraig/project/admin.php:57
+[04-Dec-2017 23:41:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(50): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 50
+[04-Dec-2017 23:44:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 49
+[04-Dec-2017 23:45:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 49
+[04-Dec-2017 23:49:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 49
+[04-Dec-2017 23:50:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 49
+[04-Dec-2017 23:51:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 49
+[04-Dec-2017 23:51:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:49
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(49): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 49
+[04-Dec-2017 23:52:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sizes = 'dqjioe'
+	            releaseYear = '2017'
+	            brandId = '1'
+  ' at line 5' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(50): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 50
+[04-Dec-2017 23:53:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'sizes = 'Mens:2-3'
+	            releaseYear = '2017'
+	            brandId = '3'
+' at line 5' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(50): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 50
+[05-Dec-2017 00:06:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/lcraig/project/updateShoe.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/updateShoe.php(23): PDOStatement->execute(NULL)
+#1 /home/ubuntu/workspace/lcraig/project/updateShoe.php(59): getShoeInfo()
+#2 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/updateShoe.php on line 23
+[05-Dec-2017 19:03:12 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 19
+[05-Dec-2017 19:03:12 UTC] PHP Stack trace:
+[05-Dec-2017 19:03:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:29:26 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 105
+[05-Dec-2017 19:29:26 UTC] PHP Stack trace:
+[05-Dec-2017 19:29:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:29:29 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 105
+[05-Dec-2017 19:29:29 UTC] PHP Stack trace:
+[05-Dec-2017 19:29:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:30:00 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 105
+[05-Dec-2017 19:30:00 UTC] PHP Stack trace:
+[05-Dec-2017 19:30:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:30:06 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 105
+[05-Dec-2017 19:30:06 UTC] PHP Stack trace:
+[05-Dec-2017 19:30:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:30:24 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 105
+[05-Dec-2017 19:30:24 UTC] PHP Stack trace:
+[05-Dec-2017 19:30:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:30:26 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 105
+[05-Dec-2017 19:30:26 UTC] PHP Stack trace:
+[05-Dec-2017 19:30:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:31:25 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 105
+[05-Dec-2017 19:31:25 UTC] PHP Stack trace:
+[05-Dec-2017 19:31:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:31:59 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 107
+[05-Dec-2017 19:31:59 UTC] PHP Stack trace:
+[05-Dec-2017 19:31:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:32:00 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 107
+[05-Dec-2017 19:32:00 UTC] PHP Stack trace:
+[05-Dec-2017 19:32:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:34:18 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 107
+[05-Dec-2017 19:34:18 UTC] PHP Stack trace:
+[05-Dec-2017 19:34:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:34:19 UTC] PHP Fatal error:  Call to undefined function displayRating() in /home/ubuntu/workspace/lcraig/project/index.php on line 107
+[05-Dec-2017 19:34:19 UTC] PHP Stack trace:
+[05-Dec-2017 19:34:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/lcraig/project/index.php:0
+[05-Dec-2017 19:43:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'brand' in 'field list'' in /home/ubuntu/workspace/lcraig/project/index.php:129
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/index.php(129): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lcraig/project/index.php(198): displayShoes()
+#2 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/index.php on line 129
+[05-Dec-2017 19:47:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'year' in 'field list'' in /home/ubuntu/workspace/lcraig/project/index.php:31
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/index.php(31): PDOStatement->execute()
+#1 /home/ubuntu/workspace/lcraig/project/index.php(164): displayYear()
+#2 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/index.php on line 31
+[06-Dec-2017 01:21:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/lcraig/project/index.php:129
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/index.php(129): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lcraig/project/index.php(198): displayShoes()
+#2 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/index.php on line 129
+[06-Dec-2017 01:21:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/lcraig/project/index.php:129
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/index.php(129): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lcraig/project/index.php(198): displayShoes()
+#2 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/index.php on line 129
+[06-Dec-2017 01:26:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/lcraig/project/index.php:129
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/index.php(129): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lcraig/project/index.php(198): displayShoes()
+#2 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/index.php on line 129
+[06-Dec-2017 01:32:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/lcraig/project/index.php:129
+Stack trace:
+#0 /home/ubuntu/workspace/lcraig/project/index.php(129): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/lcraig/project/index.php(198): displayShoes()
+#2 {main}
+  thrown in /home/ubuntu/workspace/lcraig/project/index.php on line 129
+[07-Dec-2017 07:26:05 UTC] PHP Parse error:  syntax error, unexpected 'https' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/lcraig/project/index.php on line 178
+[07-Dec-2017 07:26:31 UTC] PHP Parse error:  syntax error, unexpected 'https' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/lcraig/project/index.php on line 178
